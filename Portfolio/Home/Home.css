@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background: whitesmoke;
+}
+
+.container {
+    margin: 0 5% 0 5%;
+}
+
+nav {
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 3vh;
+}
+
+nav ul li {
+    font-size: 18px;
+    padding: 25px;
+}
+
+nav ul li a {
+    cursor: pointer;
+    color: rgb(88, 72, 72);
+}
+
+.nameHeading {
+    color: rgb(105, 159, 209);
+}
+
+.name {
+    padding-left: 20px;
+    font-size: 35px;
+}
+
+.name::after {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 40px;
+    animation: blinking 1.2s infinite;
+    margin-left: 5px;
+}
+
+@keyframes blinking {
+    0% {
+        background-color: rgb(105, 159, 209);
+    }
+    49% {
+        background-color: rgb(105, 159, 209);
+    }
+    60% {
+        background-color: transparent;
+    }
+    99% {
+        background-color: transparent;
+    }
+    100% {
+        background-color: rgb(105, 159, 209);
+    }
+}
+
+.description {
+    margin-top: 50px;
+}
+
+.description p {
+    line-height: 35px;
+    font-size: 20px;
+    color: rgb(88, 72, 72);
+}
+
+.goToProject {
+    color: rgb(105, 159, 209);
+    font-weight: bold;
+}
