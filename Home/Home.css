@@ -1,85 +1,255 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    background: whitesmoke;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
+body {
+  background: whitesmoke;
+}
 .container {
-    margin: 0 5% 0 5%;
+  margin: 0 5% 0 5%;
 }
 
 nav {
-    width: 100%;
+  width: 100%;
 }
 
 nav ul {
-    list-style: none;
-    margin-left: 20px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    margin: 3vh;
+  list-style: none;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin: 3vh;
 }
 
 nav ul li {
-    font-size: 18px;
-    padding: 25px;
+  font-size: 18px;
+  padding: 25px;
 }
 
 nav ul li a {
-    cursor: pointer;
-    color: rgb(88, 72, 72);
+  cursor: pointer;
+  color: rgb(88, 72, 72);
 }
 
 .nameHeading {
-    color: rgb(105, 159, 209);
+  color: rgb(105, 159, 209);
 }
 
 .name {
-    padding-left: 20px;
-    font-size: 35px;
+  padding-left: 20px;
+  font-size: 35px;
 }
 
 .name::after {
-    content: '';
-    display: inline-block;
-    width: 20px;
-    height: 40px;
-    animation: blinking 1.2s infinite;
-    margin-left: 5px;
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 40px;
+  animation: blinking 1.2s infinite;
+  margin-left: 5px;
 }
 
 @keyframes blinking {
-    0% {
-        background-color: rgb(105, 159, 209);
-    }
-    49% {
-        background-color: rgb(105, 159, 209);
-    }
-    60% {
-        background-color: transparent;
-    }
-    99% {
-        background-color: transparent;
-    }
-    100% {
-        background-color: rgb(105, 159, 209);
-    }
+  0% {
+    background: rgb(105, 159, 209);
+  }
+  49% {
+    background: rgb(105, 159, 209);
+  }
+  60% {
+    background: transparent;
+  }
+  99% {
+    background: transparent;
+  }
+  100% {
+    background: rgb(105, 159, 209);
+  }
 }
 
 .description {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .description p {
-    line-height: 35px;
-    font-size: 20px;
-    color: rgb(88, 72, 72);
+  line-height: 35px;
+  font-size: 20px;
+  color: rgb(88, 72, 72);
 }
 
 .goToProject {
-    color: rgb(105, 159, 209);
-    font-weight: bold;
+  color: rgb(105, 159, 209);
+  font-weight: bold;
+}
+
+.info {
+  width: 100%;
+  margin-top: 60px;
+}
+
+.top {
+  height: 30px;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  background: rgb(163, 153, 153);
+}
+.red-round {
+  margin: 7px 0 0 10px;
+  height: 15px;
+  width: 15px;
+  text-align: center;
+  background: red;
+  border-radius: 50%;
+}
+.yellow-round {
+  margin: 7px 0 0 10px;
+  height: 15px;
+  width: 15px;
+  text-align: center;
+  background: yellow;
+  border-radius: 50%;
+}
+.green-round {
+  margin: 7px 0 0 10px;
+  height: 15px;
+  width: 15px;
+  text-align: center;
+  background: green;
+  border-radius: 50%;
+}
+.info-content {
+  height: auto;
+  background: rgba(31, 57, 114, 0.74);
+  padding-bottom: 60px;
+}
+
+.content-wrapper {
+  margin-left: 40px;
+}
+
+.description-wrapper {
+  padding-top: 40px;
+}
+
+.personal-description {
+  font-size: 20px;
+  color: white;
+}
+.info-description {
+  margin-left: 10px;
+}
+
+.isral-info {
+  font-size: 20px;
+  color: gold;
+  padding-top: 2px;
+  line-height: 30px;
+}
+
+.isral-info span a {
+  cursor: pointer;
+  color: #13dada;
+}
+
+.last-description {
+  font-size: 20px;
+  color: white;
+}
+.last-description::after {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 25px;
+  animation: whiteBlink 1.2s infinite;
+  margin-left: 10px;
+}
+
+@keyframes whiteBlink {
+  0% {
+    background: white;
+  }
+  49% {
+    background: white;
+  }
+  60% {
+    background: transparent;
+  }
+  99% {
+    background: transparent;
+  }
+  100% {
+    background: white;
+  }
+}
+
+.project-section {
+  margin-top: 80px;
+  padding-bottom: 200px;
+}
+
+.project-heading {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.project-heading h2 {
+  font-size: 26px;
+  color: rgb(105, 159, 209);
+}
+
+.bottom-border {
+  border-bottom: 10px solid rgb(105, 159, 209);
+  margin: 0 40% 0 40%;
+}
+.project-container {
+  margin-top: 50px;
+  height: 150vh;
+  background: white;
+  border: 1px solid white;
+}
+
+.project-name {
+  padding-top: 40px;
+  margin-left: 25px;
+}
+.project-name h2 {
+  font-size: 26px;
+  color: gray;
+}
+
+.project-description {
+  padding-top: 40px;
+  margin: 0 20px 0 20px;
+}
+
+.project-description p {
+  font-size: 18px;
+  color: gray;
+  line-height: 30px;
+}
+
+.project-tools {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.tools {
+  color: gray;
+  border: 2px solid #13dada;
+  margin: 20px 0 0 10px;
+}
+
+.tools p {
+  padding: 10px 5px 10px 5px;
 }
