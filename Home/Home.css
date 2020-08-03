@@ -211,9 +211,10 @@ nav ul li a {
 }
 .project-container {
   margin-top: 50px;
-  height: 150vh;
+  height: auto;
   background: white;
   border: 1px solid white;
+  padding-bottom: 50px;
 }
 
 .project-name {
@@ -247,9 +248,44 @@ nav ul li a {
 .tools {
   color: gray;
   border: 2px solid #13dada;
-  margin: 20px 0 0 10px;
+  margin: 20px 0 0 20px;
 }
 
 .tools p {
   padding: 10px 5px 10px 5px;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  margin: 50px 0 0 20px;
+}
+
+.demo-link {
+  color: white;
+  background: rgb(109, 109, 197);
+  padding: 15px 10px 15px 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  width: 130px;
+}
+
+.demo-link span {
+  margin-left: 10px;
+}
+
+.source-link {
+  color: rgb(109, 109, 197);
+  background: white;
+  border: 1px solid rgb(202, 193, 193);
+  padding: 15px 20px 15px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  width: 130px;
+  margin-top: 20px;
+}
+.source-link span {
+  margin-left: 10px;
 }
