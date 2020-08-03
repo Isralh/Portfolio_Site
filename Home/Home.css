@@ -99,7 +99,7 @@ nav ul li a {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: flex-start;
-  background: rgb(163, 153, 153);
+  background: rgb(221, 212, 212);
 }
 .red-round {
   margin: 7px 0 0 10px;
