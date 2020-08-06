@@ -199,7 +199,7 @@ nav ul li a {
 
 .project-section {
   margin-top: 80px;
-  padding-bottom: 150px;
+  padding-bottom: 80px;
 }
 
 .project-heading {
@@ -215,6 +215,25 @@ nav ul li a {
 .bottom-border {
   border-bottom: 10px solid rgb(105, 159, 209);
   margin: 0 40% 0 40%;
+  text-align: center;
+}
+
+@media (min-width:500px) {
+  .bottom-border {
+    margin: 0 45% 0 45%;
+  }
+}
+
+@media (min-width:768px) {
+  .bottom-border {
+    margin: 0 46% 0 46%;
+  }
+}
+
+@media (min-width:1024px) {
+  .bottom-border {
+    margin: 0 47% 0 47%;
+  }
 }
 
 .project-container {
@@ -298,4 +317,62 @@ nav ul li a {
 
 .source-link span {
   margin-left: 10px;
+}
+
+.footer-heading {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.footer-heading h2 {
+  font-size: 26px;
+  color: rgb(105, 159, 209);
+}
+
+.contact-List {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  text-align: center;
+}
+
+.contact-List p {
+  font-size: 20px;
+  color: gray;
+}
+
+.contact-List a {
+  margin-top: 20px;
+  font-size: 20px;
+  color: gray;
+}
+
+.copyRights {
+  margin-top: 100px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.copyRights p {
+  color: gray;
+  font-size: 15px;
+}
+
+@media (min-width: 400px) {
+  .links-container {
+    flex-direction: row;
+  }
+}
+
+@media (min-width:400px) {
+  .demo-link {
+    margin: 20px 20px 20px 0;
+  }
+}
+
+@media (min-width:400px) {
+  .source-link {
+    margin: 20px;
+  }
 }
