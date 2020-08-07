@@ -299,6 +299,11 @@ nav ul li a {
   width: 130px;
 }
 
+.demo-link a {
+  text-decoration: none;
+  color: white;
+}
+
 .demo-link span {
   margin-left: 10px;
 }
