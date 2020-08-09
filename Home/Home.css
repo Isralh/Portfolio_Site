@@ -90,6 +90,7 @@ nav ul li a {
 
 .goToProject a {
   text-decoration: none;
+  color: rgb(105, 159, 209);
 }
 
 .info {
