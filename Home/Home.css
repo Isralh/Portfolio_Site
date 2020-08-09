@@ -34,6 +34,7 @@ nav ul li {
 nav ul li a {
   cursor: pointer;
   color: rgb(88, 72, 72);
+  text-decoration: none;
 }
 
 .nameHeading {
@@ -85,6 +86,10 @@ nav ul li a {
 .goToProject {
   color: rgb(105, 159, 209);
   font-weight: bold;
+}
+
+.goToProject a {
+  text-decoration: none;
 }
 
 .info {
