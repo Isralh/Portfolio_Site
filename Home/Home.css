@@ -166,12 +166,11 @@ nav ul li a {
   line-height: 30px;
 }
 
-.isral-info span a {
+.link {
   cursor: pointer;
   color: #13dada;
   text-decoration: none;
 }
-
 .last-description {
   font-size: 20px;
   color: white;
